@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'albums/:id' => 'albums#show', as: :album
   post 'albums' => 'albums#create'
   
-  get 'signup'  => 'user#new' 
+  get 'signup'  => 'users#new' 
   resources :users
   
   get '/login' => 'sessions#new'
